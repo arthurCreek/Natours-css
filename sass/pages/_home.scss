@@ -7,6 +7,12 @@
 .section-features {
     padding: 20rem 0;
     margin-top: -13rem;
+    background-image: -webkit-gradient(
+        linear,
+        left top, right bottom,
+        from(rgba($color-primary-light, 0.8)),
+        to(rgba($color-primary-dark, 0.8))),
+    url(../img/nat-4.jpg);
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -14,10 +20,13 @@
     url(../img/nat-4.jpg);
     background-size: cover;
 
-    transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+
+            transform: skewY(-7deg);
 
     & > * {
-        transform: skewY(7deg);
+        -webkit-transform: skewY(7deg);
+                transform: skewY(7deg);
     }
 }
 

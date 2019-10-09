@@ -6,24 +6,30 @@
         padding: 15px 40px;
         display: inline-block;
         border-radius: 100px;
+        -webkit-transition: all .2s;
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
     }
     
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba($color-black,.2);
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+        -webkit-box-shadow: 0 10px 20px rgba($color-black,.2);
+                box-shadow: 0 10px 20px rgba($color-black,.2);
 
         &::after {
-            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+                    transform: scale(1.5);
             opacity: 0;
         }
     }
     
     &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba($color-black,.2);
+        -webkit-transform: translateY(-1px);
+                transform: translateY(-1px);
+        -webkit-box-shadow: 0 5px 10px rgba($color-black,.2);
+                box-shadow: 0 5px 10px rgba($color-black,.2);
     }
     
     &--white {
@@ -55,12 +61,15 @@
         top: 0;
         left: 0;
         z-index: -1;
+        -webkit-transition: all .4s;
         transition: all .4s;
     }
     
     &--animated {
-        animation: moveInBottom .5s ease-out .5s;
-        animation-fill-mode: backwards;
+        -webkit-animation: moveInBottom .5s ease-out .5s;
+                animation: moveInBottom .5s ease-out .5s;
+        -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards;
     }
 }
 
@@ -79,12 +88,16 @@
     &:hover {
         background-color: $color-primary;
         color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2px);
+        -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .15);
+                box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        -webkit-transform: translateY(-2px);
+                transform: translateY(-2px);
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-        transform: translateY(0);
+        -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+                box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
